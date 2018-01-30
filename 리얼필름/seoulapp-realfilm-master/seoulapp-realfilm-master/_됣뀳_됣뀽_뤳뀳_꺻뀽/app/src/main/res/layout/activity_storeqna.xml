@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.app.seoul.View.Activity.StoreqnaActivity">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="52.66dp"
+        android:background="@color/textColor"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/qna_back"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="4.67dp"
+            android:layout_marginTop="15.33dp"
+            android:background="@drawable/settings_back_btn_24x24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="136dp"
+            android:layout_marginTop="17dp"
+            android:gravity="center"
+            android:text="상가등록문의"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:text="리얼필름 내 상가 등록 문의"
+        android:textColor="@color/black"
+        android:textSize="16.67sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="13dp"
+        android:text="@string/qna_a"
+        android:textColor="@color/regular"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="16.33dp"
+        android:background="@color/more_line" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="25.67dp"
+        android:text="상가명"
+        android:textColor="@color/textColor"
+        android:textSize="16.67sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/qna_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="14dp"
+        android:background="@null"
+        android:hint="내 답변"
+        android:inputType="text"
+        android:textColor="@color/more_line"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="25.67dp"
+        android:text="상가주소"
+        android:textColor="@color/textColor"
+        android:textSize="16.67sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/qna_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="14dp"
+        android:background="@null"
+        android:hint="내 답변"
+        android:inputType="text"
+        android:textColor="@color/more_line"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="26dp"
+        android:text="상가 지명"
+        android:textColor="@color/textColor"
+        android:textSize="16.67sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/qna_address_a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="14dp"
+        android:background="@null"
+        android:hint="내 답변"
+        android:inputType="text"
+        android:textColor="@color/more_line"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10.33dp"
+        android:background="@color/more_line" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="25.67dp"
+        android:text="연락처"
+        android:textColor="@color/textColor"
+        android:textSize="16.67sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/qna_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="14dp"
+        android:background="@null"
+        android:hint="내 답변"
+        android:inputType="number"
+        android:textColor="@color/more_line"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10.33dp"
+        android:background="@color/more_line" />
+
+    <Button
+        android:id="@+id/qna_submit"
+        android:layout_width="match_parent"
+        android:layout_height="33.33dp"
+        android:layout_marginLeft="44.67dp"
+        android:layout_marginRight="44.67dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/more_round"
+        android:text="문의하기"
+        android:textColor="@color/white"
+        android:textSize="16.67sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

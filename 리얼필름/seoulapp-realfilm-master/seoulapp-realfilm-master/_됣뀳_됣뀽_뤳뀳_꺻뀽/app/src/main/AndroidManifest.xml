@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.app.seoul">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/mainicon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".View.Activity.LoginActivity"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".View.Activity.MainActivity" />
+        <activity android:name=".View.Activity.RegisterActivity" />
+        <activity android:name=".View.Activity.UploadActivity" />
+        <activity
+            android:name=".View.Activity.EventActivity"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name=".View.Activity.BoardInfoActivity"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <activity android:name=".View.Activity.DistrictActivity" />
+        <activity android:name=".View.Activity.EventInfoActivity" />
+        <activity android:name=".View.Activity.NoticeActivity" />
+        <activity android:name=".View.Activity.PasswordChangeActivity" />
+        <activity android:name=".View.Activity.ProfileSettingActivity" />
+        <activity android:name=".View.Activity.Register_b_Activity" />
+        <activity android:name=".View.Activity.Register_c_Activity" />
+        <activity android:name=".View.Activity.StoreqnaActivity" />
+        <activity android:name=".View.Activity.TermsActivity" />
+        <activity android:name=".View.Activity.UserprivitActivity" />
+        <activity android:name=".View.Activity.UserProfileActivity" />
+        <activity android:name=".View.Activity.TagActivity" />
+        <activity android:name=".View.Activity.ContactusActivity" />
+        <activity android:name=".View.Activity.SearchActivity" />
+
+        <!-- Google Map -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="KEY" />
+
+        <activity android:name=".View.Activity.ChangeNameActivity" />
+        <activity android:name=".View.Activity.TopTenActivity" />
+        <activity android:name=".View.Activity.ImageInfoActivity" />
+        <activity android:name=".View.Activity.AlarmActivity" />
+        <activity android:name=".View.Activity.Top5Activity" />
+        <activity android:name=".View.Activity.TopjongActivity"></activity>
+    </application>
+
+</manifest>

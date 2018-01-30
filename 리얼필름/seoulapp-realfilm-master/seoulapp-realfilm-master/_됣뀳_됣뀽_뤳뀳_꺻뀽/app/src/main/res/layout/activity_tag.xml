@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.app.seoul.View.Activity.TagActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="52.67dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/tag_back"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="4.67dp"
+            android:layout_marginTop="15.67dp"
+            android:background="@drawable/upload_back_btn_24x24" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="28.67dp"
+            android:gravity="center"
+            android:text="태그 선택"
+            android:textColor="@color/textColor"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1.3dp"
+        android:background="@color/regular" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="19dp"
+        android:text="필름 성격을 선택해주세요"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:id="@+id/tag_selectedtag"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginLeft="38dp"
+        android:layout_marginRight="38dp"
+        android:layout_marginTop="29.33dp"
+        android:orientation="horizontal">
+
+
+        <!--  <ImageView
+              android:id="@+id/tag_h_one"
+              android:layout_width="40dp"
+              android:layout_height="56dp"
+              android:background="@drawable/category_default_icon_40x56" />
+
+          <ImageView
+              android:id="@+id/tag_h_two"
+              android:layout_width="40dp"
+              android:layout_height="56.67dp"
+              android:layout_marginLeft="21dp"
+              android:background="@drawable/category_blank_icon_40x56" />
+
+          <ImageView
+              android:id="@+id/tag_h_three"
+              android:layout_width="40dp"
+              android:layout_height="56dp"
+              android:layout_marginLeft="21dp"
+              android:background="@drawable/category_blank_icon_40x56" />
+
+          <ImageView
+              android:id="@+id/tag_h_four"
+              android:layout_width="40dp"
+              android:layout_height="56dp"
+              android:layout_marginLeft="21dp"
+              android:background="@drawable/category_blank_icon_40x56" />
+
+          <ImageView
+              android:id="@+id/tag_h_five"
+              android:layout_width="40dp"
+              android:layout_height="56dp"
+              android:layout_marginLeft="21dp"
+              android:background="@drawable/category_blank_icon_40x56" />
+
+  -->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1.3dp"
+        android:layout_marginTop="32dp"
+        android:background="@color/textColor" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="67.33dp"
+        android:layout_marginRight="67.33dp"
+        android:layout_marginTop="29dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/tag_l_a"
+            android:layout_width="40dp"
+            android:layout_height="56.67dp"
+            android:background="@drawable/category_alley_icon_40x56" />
+
+        <ImageView
+            android:id="@+id/tag_l_b"
+            android:layout_width="40dp"
+            android:layout_height="56.67dp"
+            android:layout_marginLeft="21.67dp"
+            android:background="@drawable/category_show_icon_40x56" />
+
+        <ImageView
+            android:id="@+id/tag_l_c"
+            android:layout_width="40dp"
+            android:layout_height="56.67dp"
+            android:layout_marginLeft="21.67dp"
+            android:background="@drawable/category_music_icon_40x56" />
+
+        <ImageView
+            android:id="@+id/tag_l_d"
+            android:layout_width="40dp"
+            android:layout_height="56.67dp"
+            android:layout_marginLeft="21.67dp"
+            android:background="@drawable/category_drinking_icon_40x56" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="75dp"
+        android:layout_marginRight="75dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13.67dp"
+            android:text="골목"
+            android:textColor="@color/regular"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="36.33dp"
+            android:layout_marginTop="13.67dp"
+            android:text="공연"
+            android:textColor="@color/regular"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="36.33dp"
+            android:layout_marginTop="13.67dp"
+            android:text="음악"
+            android:textColor="@color/regular"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="36.33dp"
+            android:layout_marginTop="13.67dp"
+            android:text="음주"
+            android:textColor="@color/regular"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="67.33dp"
+        android:layout_marginRight="67.33dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/tag_l_e"
+            android:layout_width="40dp"
+            android:layout_height="56.67dp"
+            android:background="@drawable/category_park_icon_40x56" />
+
+        <ImageView
+            android:id="@+id/tag_l_f"
+            android:layout_width="40dp"
+            android:layout_height="56.67dp"
+            android:layout_marginLeft="21.67dp"
+            android:background="@drawable/category_walk_icon_40x56" />
+
+        <ImageView
+            android:id="@+id/tag_l_g"
+            android:layout_width="40dp"
+            android:layout_height="56.67dp"
+            android:layout_marginLeft="21.67dp"
+            android:background="@drawable/category_traffic_icon_40x56" />
+
+        <ImageView
+            android:id="@+id/tag_l_h"
+            android:layout_width="40dp"
+            android:layout_height="56.67dp"
+            android:layout_marginLeft="21.67dp"
+            android:background="@drawable/category_game_icon_40x56" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="75dp"
+        android:layout_marginRight="75dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13.67dp"
+            android:text="공원"
+            android:textColor="@color/regular"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="36.33dp"
+            android:layout_marginTop="13.67dp"
+            android:text="산책"
+            android:textColor="@color/regular"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="36.33dp"
+            android:layout_marginTop="13.67dp"
+            android:text="교통"
+            android:textColor="@color/regular"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="36.33dp"
+            android:layout_marginTop="13.67dp"
+            android:text="오락"
+            android:textColor="@color/regular"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="67.33dp"
+        android:layout_marginRight="67.33dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/tag_l_i"
+            android:layout_width="40dp"
+            android:layout_height="56.67dp"
+            android:background="@drawable/category_cafe_icon_40x56" />
+
+        <ImageView
+            android:id="@+id/tag_l_j"
+            android:layout_width="40dp"
+            android:layout_height="56.67dp"
+            android:layout_marginLeft="21.67dp"
+            android:background="@drawable/category_exercise_icon_40x56" />
+
+        <ImageView
+            android:id="@+id/tag_l_k"
+            android:layout_width="40dp"
+            android:layout_height="56.67dp"
+            android:layout_marginLeft="21.67dp"
+            android:background="@drawable/category_busking_icon_40x56" />
+
+        <ImageView
+            android:id="@+id/tag_l_l"
+            android:layout_width="40dp"
+            android:layout_height="56.67dp"
+            android:layout_marginLeft="21.67dp"
+            android:background="@drawable/category_photozone_icon_40x56" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="75dp"
+        android:layout_marginRight="65dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13.67dp"
+            android:text="카페"
+            android:textColor="@color/regular"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="13.67dp"
+            android:text="운동"
+            android:textColor="@color/regular"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="13.67dp"
+            android:text="버스킹"
+            android:textColor="@color/regular"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="13.67dp"
+            android:text="포토존"
+            android:textColor="@color/regular"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/tag_submit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/textColor"
+        android:text="등록하기"
+        android:textColor="@color/white"
+        android:textSize="16.67dp"
+        android:textStyle="bold" />
+
+</LinearLayout>

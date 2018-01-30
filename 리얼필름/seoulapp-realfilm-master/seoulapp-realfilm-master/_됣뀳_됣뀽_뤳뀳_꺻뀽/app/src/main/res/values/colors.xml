@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="textColor">#FFA726</color>
+    <color name="marker">#44FFA726</color>
+    <color name="white">#FFFFFF</color>
+    <color name="more_line">#efebe9</color>
+    <color name="black">#000000</color>
+    <color name="regular">#999999</color>
+    <color name="line">#BCAAA4</color>
+    <color name="film_gray">#BDBDBD</color>
+    <color name="comment_text">#888888</color>
+    <color name="six">#666666</color>
+    <color name="half_back">#66000000</color>
+    <color name="three">#333333</color>
+    <color name="ee">#eeeeee</color>
+    <color name="done">#d1d1d1</color>
+    <color name="def">#BCAAA4</color>
+
+</resources>

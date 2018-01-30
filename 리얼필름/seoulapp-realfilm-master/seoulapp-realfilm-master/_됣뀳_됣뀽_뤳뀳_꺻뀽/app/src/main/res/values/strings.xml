@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">리얼필름</string>
+
+    <string name="toast_login_empty">빈칸을 확인하세요.</string>
+    <string name="more_service">서비스 &amp; 문의</string>
+    <string name="contact_a">리얼필름 사용시 버그나 개선에 대한 문의가 있다면\n
+        가감없이 작성 부탁드립니다. \n
+        담당자 확인 후 빠른 답변 드리겠습니다.</string>
+
+    <string name="qna_a">상가 등록을 원하시는 분들은 언제든 문의바랍니다. \n
+                            담당자가 확인 후 성심성의껏 답변 드리겠습니다.</string>
+    <string name="testdata">하늘이 너무 깨끗하고 맑은 날, 느긋하게 익선동 한옥마을이나 가볼까 길을 나섰다. 익선동 한옥마을을 제일 빠르게
+    갈 수 있는 방법은 서울 지하철 1,3,5호선을 타고 종로3가 4번출로 나오면된다. \n\n 어느 출구로 가든지 길은 통하지만 4번출구가 내 생각에
+    제일 빠르다! 4번출구로나와 조금만 걸으면 딱 봐도 한옥마을이라는 느낌을 강하게 받을 수 있다.</string>
+
+    <plurals name="likes_count">
+        <item quantity="one">%d</item>
+        <item quantity="other">%d</item>
+    </plurals>
+</resources>

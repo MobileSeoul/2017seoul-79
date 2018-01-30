@@ -1,0 +1,700 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@null"
+    android:orientation="vertical"
+    tools:context="com.app.seoul.View.Activity.BoardInfoActivity">
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/info_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@null"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="297dp"
+                android:background="@null">
+
+                <ImageView
+                    android:id="@+id/info_top_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="197dp"
+                    android:scaleType="fitXY"
+                    tools:background="@drawable/mypage_cover_default_1080x600" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="197dp"
+                    android:background="@color/half_back" />
+
+                <TextView
+                    android:id="@+id/info_top_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="76.67dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="13.67sp"
+                    android:textStyle="bold"
+                    tools:text="익선동 한옥마을에서 낭만 가득 하루 :)" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="116dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/info_top_fallow"
+                        android:layout_width="70dp"
+                        android:layout_height="27dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/info_fallow" />
+
+                    <!--    <ImageView
+                            android:id="@+id/info_top_profile"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            tools:background="@drawable/profile"
+                            android:scaleType="fitXY"/> -->
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/info_top_profile"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="20dp"
+                        tools:src="@drawable/profile" />
+
+                    <ImageButton
+                        android:id="@+id/info_top_like"
+                        android:layout_width="70dp"
+                        android:layout_height="27dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/film_likeoff_btn_70x27" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="@null"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/info_top_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="11.67sp"
+                        tools:text="2017.08" />
+
+                    <TextView
+                        android:id="@+id/info_top_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="9dp"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textSize="13.33sp"
+                        tools:text="김여원님의 필름" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="9dp"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:background="@drawable/film_view_btn_24x24" />
+
+                        <TextView
+                            android:id="@+id/info_view_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center"
+                            android:textColor="@color/textColor"
+                            android:textSize="13.33sp"
+                            tools:text="273" />
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginLeft="20dp"
+                            android:background="@drawable/film_like_btn_24x24" />
+
+                        <TextView
+                            android:id="@+id/info_like_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center"
+                            android:textColor="@color/textColor"
+                            android:textSize="13.33sp"
+                            tools:text="273" />
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginLeft="20dp"
+                            android:background="@drawable/film_talk_btn_24x24" />
+
+                        <TextView
+                            android:id="@+id/info_comment_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center"
+                            android:textColor="@color/textColor"
+                            android:textSize="13.33sp"
+                            tools:text="273" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="10dp"
+                android:background="@color/more_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/info_slide_close"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/info_sl"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="38.67dp"
+                        android:background="@drawable/film_closeon_btn_24x24" />
+
+                    <TextView
+                        android:id="@+id/info_open_close"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"
+                        android:text="필름 접어보기"
+                        android:textColor="@color/textColor"
+                        android:textSize="11.67sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@color/more_line"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:id="@+id/info_slide_open"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/info_sli"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="38.67dp"
+                        android:background="@drawable/info_close" />
+
+                    <TextView
+                        android:id="@+id/info_open_open"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"
+                        android:text="필름 펼쳐보기"
+                        android:textColor="@color/film_gray"
+                        android:textSize="11.67sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/more_line" />
+
+            <LinearLayout
+                android:id="@+id/info_chiledscroll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:orientation="vertical"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <HorizontalScrollView
+                        android:id="@+id/info_horizontalview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:fillViewport="false"
+                        android:foregroundGravity="left"
+                        android:scrollbars="none">
+
+                        <LinearLayout
+                            android:id="@+id/info_image_row"
+                            android:layout_width="match_parent"
+                            android:layout_height="130dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@null"
+                            android:orientation="horizontal" />
+
+                    </HorizontalScrollView>
+
+                    <LinearLayout
+                        android:id="@+id/info_scroll_open"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/more_line"
+                        android:orientation="vertical" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@null"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:background="@drawable/film_film_icon_24x24" />
+
+                        <TextView
+                            android:id="@+id/info_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:textSize="13.33sp"
+                            tools:text="익선동 한옥마을에서 낭만 가득한 하루 :)" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/info_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="16dp"
+                        tools:text="@string/testdata" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:background="@drawable/film_skyline_icon_360x90">
+
+                        <LinearLayout
+                            android:id="@+id/info_tag_row"
+                            android:layout_width="match_parent"
+                            android:layout_height="56dp"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginRight="40dp"
+                            android:layout_marginTop="24dp"
+                            android:background="@null"
+                            android:gravity="center"
+                            android:orientation="horizontal" />
+
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/info_locationName"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@color/textColor"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        tools:text="서을특별시 종로구 익선동 수표로 28길" />
+
+                    <fragment
+                        android:id="@+id/info_maps"
+                        android:name="com.google.android.gms.maps.SupportMapFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/textColor"
+                        android:orientation="horizontal" />
+
+
+                    <android.support.constraint.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="20dp"
+                            android:text="주변 상가정보"
+                            android:textColor="@color/textColor"
+                            android:textSize="15sp"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </android.support.constraint.ConstraintLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="14dp"
+
+                        android:layout_marginTop="14dp"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/info_food_k"
+                            android:layout_width="50dp"
+                            android:layout_height="24dp"
+                            android:background="@drawable/more_round"
+                            android:gravity="center"
+                            android:text="한식"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/info_food_a"
+                            android:layout_width="50dp"
+                            android:layout_height="24dp"
+                            android:layout_marginLeft="14dp"
+                            android:background="@drawable/more_round_a"
+                            android:gravity="center"
+                            android:text="양식"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/info_food_j"
+                            android:layout_width="50dp"
+                            android:layout_height="24dp"
+                            android:layout_marginLeft="14dp"
+                            android:background="@drawable/more_round_a"
+                            android:gravity="center"
+                            android:text="일식"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/info_food_c"
+                            android:layout_width="50dp"
+                            android:layout_height="24dp"
+                            android:layout_marginLeft="14dp"
+                            android:background="@drawable/more_round_a"
+                            android:gravity="center"
+                            android:text="중식"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/info_food_cafe"
+                            android:layout_width="50dp"
+                            android:layout_height="24dp"
+                            android:layout_marginLeft="14dp"
+                            android:background="@drawable/more_round_a"
+                            android:gravity="center"
+                            android:text="바/카페"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/info_food_recyclerview"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:scrollbars="none" />
+
+                    <TextView
+                        android:id="@+id/info_not_food"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:background="@color/half_back"
+                        android:gravity="center"
+                        android:text="해당 정보가 존재하지 않습니다"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:visibility="gone"
+                        tools:visibility="visible" />
+
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/info_comment_recyclerview"
+                            android:layout_width="match_parent"
+                            android:layout_height="300dp"
+                            android:layout_marginBottom="30dp"
+                            android:layout_marginTop="2dp"
+                            android:scrollbars="none" />
+
+                        <LinearLayout
+                            android:id="@+id/info_comment_popup"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_gravity="bottom"
+                            android:background="@null"
+                            android:orientation="horizontal"
+                            android:visibility="gone"
+                            tools:visibility="visible">
+
+                            <TextView
+                                android:id="@+id/info_comment_popup_id"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="10dp"
+                                android:gravity="center"
+                                android:textColor="@color/comment_text"
+                                android:textSize="10sp"
+                                android:textStyle="bold"
+                                tools:text="사용자" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="님에게 답글 작성 중"
+                                android:textColor="@color/comment_text"
+                                android:textSize="10sp" />
+
+                        </LinearLayout>
+
+
+                    </FrameLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/textColor"
+                        android:orientation="vertical" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+    <zhan.transparent.widget.TransparentFrameLayout
+        android:id="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/info_back"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginLeft="4.33dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/film_back_btn_24x24"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/info_more"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginRight="11.67dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/film_more_btn_24x24"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/info_scrap"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginRight="3.67dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/info_scrap"
+                app:layout_constraintRight_toLeftOf="@+id/info_more"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+    </zhan.transparent.widget.TransparentFrameLayout>
+
+    <!--
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/info_back"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginLeft="4.33dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/film_back_btn_24x24"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageButton
+                    android:id="@+id/info_more"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginRight="11.67dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/film_more_btn_24x24"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageButton
+                    android:id="@+id/info_scrap"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginRight="3.67dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/info_scrap"
+                    app:layout_constraintRight_toLeftOf="@+id/info_more"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </android.support.constraint.ConstraintLayout>
+            -->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="290dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/film_talkbox_icon_290x30">
+
+            <EditText
+                android:id="@+id/info_comment_edit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:gravity="center|left"
+                android:hint="답글을 입력해 주세요."
+                android:textColor="@color/comment_text"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/info_comment_submit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="게시"
+            android:textColor="@color/textColor"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="40dp"
+        android:background="@color/textColor"
+        android:orientation="vertical" />
+
+</android.support.design.widget.CoordinatorLayout>

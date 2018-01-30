@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="SNS공유"
+        android:icon="@drawable/film_share_icon_20x20"
+        android:id="@+id/mpop_a"/>
+    <item android:title="수정하기"
+        android:id="@+id/mpop_b"/>
+    <item android:title="삭제하기"
+        android:id="@+id/mpop_c"/>
+</menu>

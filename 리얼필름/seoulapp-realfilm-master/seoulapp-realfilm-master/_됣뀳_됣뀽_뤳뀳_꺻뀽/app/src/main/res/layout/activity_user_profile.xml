@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.app.seoul.View.Activity.UserProfileActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:fitsSystemWindows="true">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="312dp"
+            android:background="@null"
+            app:layout_collapseMode="parallax"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+            <ImageView
+                android:id="@+id/uprofile_background"
+                android:layout_width="match_parent"
+                android:layout_height="197dp"
+                android:scaleType="fitXY"
+                tools:background="@drawable/mypage_cover_default_1080x600" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="197dp"
+                android:background="@color/half_back"
+                android:scaleType="fitXY" />
+
+            <ImageButton
+                android:id="@+id/uprofile_back"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginLeft="4.67dp"
+                android:layout_marginTop="15.67dp"
+                android:background="@drawable/userpage_back_btn_24x24" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/uprofile_profile"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center|top"
+                android:layout_marginTop="116dp"
+                tools:background="@drawable/mypage_profile_default_250x250" />
+
+            <TextView
+                android:id="@+id/uprofile_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|top"
+                android:layout_marginTop="76dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="13.33sp"
+                android:textStyle="bold"
+                tools:text="안녕하세요" />
+
+            <TextView
+                android:id="@+id/uprofile_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|top"
+                android:layout_marginTop="225dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                tools:text="김여원" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="15dp"
+                android:background="@null"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="60dp"
+                    android:layout_height="45dp"
+                    android:background="@null"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/uprofile_filmc"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        tools:text="457" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="필름"
+                        android:textColor="@color/six"
+                        android:textSize="10sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="1dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:background="@color/more_line"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:layout_width="60dp"
+                    android:layout_height="45dp"
+                    android:background="@null"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/uprofile_fallowing"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        tools:text="457" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="팔로잉"
+                        android:textColor="@color/six"
+                        android:textSize="10sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="1dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:background="@color/more_line"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:layout_width="60dp"
+                    android:layout_height="45dp"
+                    android:background="@null"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/uprofile_falla"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        tools:text="457" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="팔로워"
+                        android:textColor="@color/six"
+                        android:textSize="10sp" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/uprofile_fallowbtn"
+                    android:layout_width="70dp"
+                    android:layout_height="27dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="90dp"
+                    tools:background="@drawable/userpage_fallowing_btn_70x27" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_gravity="bottom"
+                android:background="@color/more_line"
+                android:orientation="vertical" />
+        </FrameLayout>
+
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/uprofile_tablayout"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            app:layout_collapseMode="pin"
+            app:tabIndicatorColor="@color/textColor" />
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/uprofile_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    </android.support.v4.view.ViewPager>
+
+
+</android.support.design.widget.CoordinatorLayout>

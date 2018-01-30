@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/more_line"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/search_lin"
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/search_round"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="138.33dp"
+            android:background="@drawable/search_search_icon_24x24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/search_round"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:hint="검색"
+            android:textColor="@color/regular"
+            android:textColorHighlight="@color/regular"
+            android:textColorHint="@color/regular"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:id="@+id/search_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="14dp"
+        android:background="@null"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/search_top10"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@null">
+
+                <ImageView
+                    android:id="@+id/search_a"
+                    android:layout_width="match_parent"
+                    android:layout_height="167dp"
+                    android:scaleType="fitXY"
+                    tools:background="@drawable/mypage_cover_default_1080x600" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/half_back" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="이번 주의 리얼필름 TOP 10"
+                    android:textColor="@color/white"
+                    android:textSize="15.33dp"
+                    android:textStyle="bold" />
+
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/top5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@null">
+
+                <ImageView
+                    android:id="@+id/search_c"
+                    android:layout_width="match_parent"
+                    android:layout_height="167dp"
+                    android:scaleType="fitXY"
+                    tools:background="@drawable/mypage_cover_default_1080x600" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/half_back" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="가장 많이 본 리얼필름 TOP 5"
+                    android:textColor="@color/white"
+                    android:textSize="15.33dp"
+                    android:textStyle="bold" />
+
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:id="@+id/search_viewlin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@null">
+
+                <ImageView
+                    android:id="@+id/search_b"
+                    android:layout_width="match_parent"
+                    android:layout_height="167dp"
+                    android:scaleType="fitXY"
+                    tools:background="@drawable/mypage_cover_default_1080x600" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/half_back" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="종로구의 리얼필름 TOP 3"
+                    android:textColor="@color/white"
+                    android:textSize="15.33dp"
+                    android:textStyle="bold" />
+
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

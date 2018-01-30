@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/more_line"
+    android:orientation="vertical"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@null"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="11.67dp"
+            android:gravity="left|center|bottom"
+            android:text="Event"
+            android:textColor="@color/textColor"
+            android:textSize="11.67sp" />
+
+        <LinearLayout
+            android:id="@+id/more_event"
+            android:layout_width="match_parent"
+            android:layout_height="46.67dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="이벤트 정보"
+                android:textColor="@color/black"
+                android:textSize="16.67dp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/more_next_btn_72x72" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="11.67dp"
+            android:gravity="left|center|bottom"
+            android:text="@string/more_service"
+            android:textColor="@color/textColor"
+            android:textSize="11.67sp" />
+
+        <LinearLayout
+            android:id="@+id/more_notice"
+            android:layout_width="match_parent"
+            android:layout_height="46.67dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="공지사항"
+                android:textColor="@color/black"
+                android:textSize="16.67dp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/more_next_btn_72x72" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/more_line" />
+
+        <LinearLayout
+            android:id="@+id/more_twoyong"
+            android:layout_width="match_parent"
+            android:layout_height="46.67dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="이용약관"
+                android:textColor="@color/black"
+                android:textSize="16.67dp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/more_next_btn_72x72" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/more_line" />
+
+        <LinearLayout
+            android:id="@+id/more_private"
+            android:layout_width="match_parent"
+            android:layout_height="46.67dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="개인정보 취급 방침"
+                android:textColor="@color/black"
+                android:textSize="16.67dp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/more_next_btn_72x72" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/more_line" />
+
+        <LinearLayout
+            android:id="@+id/more_office"
+            android:layout_width="match_parent"
+            android:layout_height="46.67dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="상가 등록 문의"
+                android:textColor="@color/black"
+                android:textSize="16.67dp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/more_next_btn_72x72" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/more_line" />
+
+        <LinearLayout
+            android:id="@+id/more_qna"
+            android:layout_width="match_parent"
+            android:layout_height="46.67dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/setting_contactus"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="문의 하기"
+                android:textColor="@color/black"
+                android:textSize="16.67dp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/more_next_btn_72x72" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="11.67dp"
+            android:gravity="left|center|bottom"
+            android:text="정보"
+            android:textColor="@color/textColor"
+            android:textSize="11.67sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="46.67dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="버전 정보"
+                android:textColor="@color/black"
+                android:textSize="16.67dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/more_version"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="15dp"
+                android:gravity="center"
+                android:text="V1.0.0"
+                android:textColor="@color/black"
+                android:textSize="16.67dp" />
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/more_logout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/more_round"
+            android:gravity="center"
+            android:text="로그아웃"
+            android:textColor="@color/white"
+            android:textSize="16.67dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+</ScrollView>
